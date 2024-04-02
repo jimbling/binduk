@@ -64,7 +64,7 @@
             <div class="card-body">
                 <table id="siswaTable" class="display table table-bordered table-striped table-responsive table-sm" style="width:100%; vertical-align: middle; overflow-x: auto;">
                     <thead class="thead-grey">
-                        <tr>
+                        <tr style="font-size: 14px; vertical-align: middle; text-align: center;">
                             <th width='3%'>NIS</th>
                             <th>NISN</th>
                             <th>Nama</th>
@@ -81,13 +81,13 @@
                         foreach ($siswa as $ssw) : ?>
 
                             <tr>
-                                <td width='3%' style="text-align: center;"><?= $ssw['nis']; ?></td>
-                                <td width='5%' style="vertical-align: middle;"><?= $ssw['nisn']; ?></td>
-                                <td style="text-align: center; vertical-align: middle;"><?= $ssw['nama_siswa']; ?></td>
-                                <td width='10%' style="vertical-align: middle;">Kelas <?= $ssw['dikelas']; ?></td>
-                                <td width='12%' style="vertical-align: middle;"><?= $ssw['status_siswa']; ?></td>
-                                <td width='12%' style="vertical-align: middle;"><?= $ssw['tgl_diterima']; ?></td>
-                                <td width='11%' style="text-align: center;">
+                                <td width='3%' style="text-align: center; font-size: 13px;"><?= $ssw['nis']; ?></td>
+                                <td width='5%' style="vertical-align: middle; font-size: 13px;"><?= $ssw['nisn']; ?></td>
+                                <td style="text-align: center; vertical-align: middle; font-size: 13px;"><?= $ssw['nama_siswa']; ?></td>
+                                <td width='10%' style="vertical-align: middle; font-size: 13px;">Kelas <?= $ssw['dikelas']; ?></td>
+                                <td width='12%' style="vertical-align: middle; font-size: 13px;"><?= $ssw['status_siswa']; ?></td>
+                                <td width='12%' style="vertical-align: middle; font-size: 13px;"><?= $ssw['tgl_diterima']; ?></td>
+                                <td width='11%' style="text-align: center; vertical-align: middle; font-size: 13px;">
                                     <?php if ($ssw['status_pd'] == 'Aktif') : ?>
                                         <span class="badge badge-success">Aktif</span>
                                     <?php elseif ($ssw['status_pd'] == 'Mutasi') : ?>
