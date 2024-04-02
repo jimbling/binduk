@@ -1,0 +1,93 @@
+@page {
+  size: A4 landscape;
+  margin: 0.5cm;
+}
+
+/* Mengurangi ukuran font secara keseluruhan dalam halaman */
+body {
+  font-size: 11px;
+}
+
+/* Tabel dengan border */
+.table-bordered {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-bordered,
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid black;
+}
+
+/* Mengatur padding atau jarak atas dan bawah antar tabel */
+.table-bordered th,
+.table-bordered td {
+  padding: 6px;
+  text-align: left;
+}
+
+/* Mengatur warna latar belakang pada elemen <thead> */
+.table-bordered thead {
+  background-color: #ccc;
+  /* Warna abu-abu */
+}
+
+/* Tabel tanpa border */
+.table-no-border {
+  width: 100%;
+}
+
+.table-no-border th,
+.table-no-border td {
+  border: none;
+  /* Menghapus border pada sel (th dan td) */
+  padding: 8px;
+  text-align: left;
+  font-weight: normal; /* Mengatur tebal teks menjadi normal */
+}
+
+.table-no-border th,
+.table-no-border td {
+  border: none;
+  /* Menghapus border pada sel (th dan td) */
+  padding: 8px;
+  text-align: center;
+  font-weight: normal; /* Mengatur tebal teks menjadi normal */
+  line-height: 0.5; /* Mengatur spasi antar baris menjadi 1.2 kali ukuran font */
+}
+/* Mengatur tinggi minimal pada tag <br> */
+table.table-no-border th br,
+table.table-no-border td br {
+  display: block; /* Mengubah elemen <br> menjadi elemen blok */
+  content: ""; /* Menambahkan konten kosong agar tinggi berlaku */
+  height: 20px; /* Sesuaikan tinggi minimal sesuai kebutuhan */
+}
+
+/* Memisahkan tabel menjadi dua kolom dengan lebar setengah halaman */
+.table-half {
+  width: 50%;
+  float: left;
+}
+
+/* Tanda Tangan */
+.tanda-tangan {
+  width: 100%;
+  clear: both; /* Pastikan tanda tangan tidak terpisah di halaman baru */
+  page-break-inside: avoid; /* Hindari pemisahan di halaman baru */
+}
+
+/* Aturan CSS untuk teks dalam paragraf (p) pada kop surat */
+.judul-laporan {
+  margin: 0; /* Menghapus margin bawaan pada paragraf */
+  line-height: 0.5; /* Mengatur spasi antar baris menjadi 1.2 kali ukuran font */
+  text-align: left;
+}
+
+.center-text {
+  text-align: center;
+  margin-top: 5px; /* Atur jarak atas */
+  margin-bottom: 5px; /* Atur jarak bawah */
+  margin-left: auto; /* Atur jarak kiri menjadi otomatis */
+  margin-right: auto; /* Atur jarak kanan menjadi otomatis */
+}

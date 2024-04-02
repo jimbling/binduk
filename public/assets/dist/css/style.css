@@ -1,0 +1,172 @@
+thead th {
+  text-align: center;
+}
+.pagin {
+  text-align: center;
+}
+/* public/css/datepicker.css */
+#tanggal {
+  width: 200px;
+}
+
+#tanggal-picker {
+  cursor: pointer;
+  background: #3498db;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+}
+
+#preloader {
+  position: fixed;
+  top: 50%; /* Posisi vertikal di tengah */
+  left: 50%; /* Posisi horizontal di tengah */
+  transform: translate(-50%, -50%); /* Menyesuaikan posisi ke tengah */
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  border: 3px solid;
+  border-color: #fff #fff transparent transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after,
+.loader::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border: 3px solid;
+  border-color: transparent transparent #ff3d00 #ff3d00;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  animation: rotationBack 0.5s linear infinite;
+  transform-origin: center center;
+}
+.loader::before {
+  width: 32px;
+  height: 32px;
+  border-color: #fff #fff transparent transparent;
+  animation: rotation 1.5s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotationBack {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+#preloaderProses {
+  position: fixed;
+  top: 50%; /* Posisi vertikal di tengah */
+  left: 50%; /* Posisi horizontal di tengah */
+  transform: translate(-50%, -50%); /* Menyesuaikan posisi ke tengah */
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+.prosesloader {
+  position: relative;
+  display: inline-block;
+}
+.prosesloader::before {
+  content: "Loading";
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 48px;
+  letter-spacing: 2px;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: floating 1s ease-out infinite alternate;
+}
+.prosesloader::after {
+  content: "";
+  width: 100%;
+  height: 10px;
+  background: rgba(0, 0, 0, 0.15);
+  position: absolute;
+  left: 0;
+  top: 100%;
+  filter: blur(4px);
+  border-radius: 50%;
+  box-sizing: border-box;
+  animation: animloader 1s ease-out infinite alternate;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-25px);
+  }
+}
+
+@keyframes animloader {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+/* Mengatur ukuran font untuk elemen dalam modal dengan ID "petunjuk" */
+#petunjuk .modal-body {
+  font-size: 14px; /* Ganti dengan ukuran font yang Anda inginkan */
+}
+
+#petunjuk .col-sm-3 {
+  font-size: 14px; /* Ganti dengan ukuran font yang Anda inginkan */
+}
+
+#petunjuk .col-sm-9 {
+  font-size: 14px; /* Ganti dengan ukuran font yang Anda inginkan */
+}
+/* Mengatur ukuran font untuk elemen <dt> (judul definisi) dalam modal dengan ID "petunjuk" */
+#petunjuk .modal-body dt {
+  font-size: 14px; /* Ganti dengan ukuran font yang Anda inginkan */
+}
+
+/* Mengatur ukuran font untuk elemen <dd> (deskripsi definisi) dalam modal dengan ID "petunjuk" */
+#petunjuk .modal-body dd {
+  font-size: 14px; /* Ganti dengan ukuran font yang Anda inginkan */
+}
+/* CSS dalam file eksternal atau di tag <style> di header HTML */
+
+.toolbar {
+  float: left;
+}

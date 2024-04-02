@@ -1,0 +1,12 @@
+/* Mengatur tampilan tombol */
+.btn-align {
+  display: flex;
+  align-items: center;
+  /* Mengatur ikon dan teks secara vertikal */
+}
+
+/* Mengatur margin antara ikon dan teks */
+.btn-align i {
+  margin-right: 5px;
+  /* Menambahkan margin kanan agar ada ruang antara ikon dan teks */
+}
